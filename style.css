@@ -90,17 +90,38 @@
   transform: translateY(0%);
   animation: top 2s ease;
 }
+.animationBottom {
+  transform: translateY(0%);
+  animation: bottom 2s ease;
+}
 
 @keyframes top{
   0%{
-    transform: translateY(-100%);
+    transform: translateY(-70%);
   }
-  20%{
-    transform: translateY(50%);
+  25%{
+    transform: translateY(70%);
     
   }
   50%{
     transform: translateY(-30%);
+  }
+  100%{
+    transform: translateY(0%);
+    
+  }
+
+}
+@keyframes bottom{
+  0%{
+    transform: translateY(70%);
+  }
+  25%{
+    transform: translateY(-70%);
+    
+  }
+  50%{
+    transform: translateY(30%);
   }
   100%{
     transform: translateY(0%);
